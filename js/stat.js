@@ -25,8 +25,8 @@ window.renderStatistics = function (ctx, names, times) {
     return maxElement;
   }
 
-  renderCloud(ctx, CLOUD_X + 10, CLOUD_Y + 10, 'rgba(0, 0, 0, 0.7)');
-  renderCloud(ctx, CLOUD_X, CLOUD_Y, '#fff');
+  renderCloud(CLOUD_X + 10, CLOUD_Y + 10, 'rgba(0, 0, 0, 0.7)');
+  renderCloud(CLOUD_X, CLOUD_Y, '#fff');
 
   ctx.font = '16px PT Mono';
   ctx.fillStyle = '#000';
