@@ -1,8 +1,8 @@
 'use strict';
 var NAMES = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
 var LAST_NAMES = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
-var COAT_COLOR = ['gb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
-var EYES_COLOR = ['black', 'red', 'blue', 'yellow', 'green'];
+var COAT_COLORS = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
+var EYES_COLORS = ['black', 'red', 'blue', 'yellow', 'green'];
 
 var setup = document.querySelector('.setup');
 var similarListElement = document.querySelector('.setup-similar-list');
@@ -12,23 +12,23 @@ var fragment = document.createDocumentFragment();
 var wizards = [
   {
     name: NAMES[getRandomValue(NAMES)] + ' ' + LAST_NAMES[getRandomValue(LAST_NAMES)],
-    coatColor: COAT_COLOR[getRandomValue(COAT_COLOR)],
-    eyesColor: EYES_COLOR[getRandomValue(EYES_COLOR)]
+    coatColor: COAT_COLORS[getRandomValue(COAT_COLORS)],
+    eyesColor: EYES_COLORS[getRandomValue(EYES_COLORS)]
   },
   {
     name: NAMES[getRandomValue(NAMES)] + ' ' + LAST_NAMES[getRandomValue(LAST_NAMES)],
-    coatColor: COAT_COLOR[getRandomValue(COAT_COLOR)],
-    eyesColor: EYES_COLOR[getRandomValue(EYES_COLOR)]
+    coatColor: COAT_COLORS[getRandomValue(COAT_COLORS)],
+    eyesColor: EYES_COLORS[getRandomValue(EYES_COLORS)]
   },
   {
     name: NAMES[getRandomValue(NAMES)] + ' ' + LAST_NAMES[getRandomValue(LAST_NAMES)],
-    coatColor: COAT_COLOR[getRandomValue(COAT_COLOR)],
-    eyesColor: EYES_COLOR[getRandomValue(EYES_COLOR)]
+    coatColor: COAT_COLORS[getRandomValue(COAT_COLORS)],
+    eyesColor: EYES_COLORS[getRandomValue(EYES_COLORS)]
   },
   {
     name: NAMES[getRandomValue(NAMES)] + ' ' + LAST_NAMES[getRandomValue(LAST_NAMES)],
-    coatColor: COAT_COLOR[getRandomValue(COAT_COLOR)],
-    eyesColor: EYES_COLOR[getRandomValue(EYES_COLOR)]
+    coatColor: COAT_COLORS[getRandomValue(COAT_COLORS)],
+    eyesColor: EYES_COLORS[getRandomValue(EYES_COLORS)]
   }
 ];
 
