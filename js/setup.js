@@ -3,6 +3,7 @@ var NAMES = ['Иван', 'Хуан Себастьян', 'Мария', 'Крис�
 var LAST_NAMES = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
 var COAT_COLORS = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
 var EYES_COLORS = ['black', 'red', 'blue', 'yellow', 'green'];
+var COUNT_WIZARDS = 4;
 var wizards = [];
 
 var setup = document.querySelector('.setup');
@@ -25,13 +26,13 @@ function getRandomValue(arr) {
   return Math.floor(Math.random() * arr.length);
 }
 
-for (var i = 0; i < 4; i++) {
+for (var i = 0; i < COUNT_WIZARDS; i++) {
   var wizard = getWizard();
   wizards.push(wizard);
 }
 
 function renderWizard(arr) {
-  for (i = 0; i < 4; i++) {
+  for (i = 0; i < COUNT_WIZARDS; i++) {
     var wizardElement = similarWizardTemplate.cloneNode(true);
 
     wizardElement.querySelector('.setup-similar-label').textContent = arr[i].name;
