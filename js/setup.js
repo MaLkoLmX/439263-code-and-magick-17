@@ -26,15 +26,15 @@ function onPopupEscPress(evt) {
   if (evt.keyCode === ESC_KEYCODE) {
     closePopup();
   }
-};
+}
 function openPopup() {
   setup.classList.remove('hidden');
   document.addEventListener('keydown', onPopupEscPress);
-};
+}
 function closePopup() {
   setup.classList.add('hidden');
   document.removeEventListener('keydown', onPopupEscPress);
-};
+}
 
 function getWizard() {
   var wizard = {
@@ -73,34 +73,34 @@ setupSimular.classList.remove('hidden');
 
 similarListElement.appendChild(renderWizard(wizards));
 
-setupOpen.addEventListener('click', function() {
+setupOpen.addEventListener('click', function () {
   openPopup();
 });
 
-setupOpen.addEventListener('keydown', function(evt) {
+setupOpen.addEventListener('keydown', function (evt) {
   if (evt.keyCode === ENTER_KEYCODE) {
     openPopup();
   }
 });
 
-setupClose.addEventListener('click', function() {
+setupClose.addEventListener('click', function () {
   closePopup();
 });
 
-setupClose.addEventListener('keydown', function(evt) {
+setupClose.addEventListener('keydown', function (evt) {
   if (evt.keyCode === ENTER_KEYCODE) {
     closePopup();
   }
 });
 
-wizardCoat.addEventListener('click', function() {
+wizardCoat.addEventListener('click', function () {
   wizardCoat.style.fill = COAT_COLORS[getRandomValue(COAT_COLORS)];
 });
 
-wizardEyes.addEventListener('click', function() {
+wizardEyes.addEventListener('click', function () {
   wizardEyes.style.fill = EYES_COLORS[getRandomValue(EYES_COLORS)];
 });
 
-fireball.addEventListener('click', function() {
+fireball.addEventListener('click', function () {
   fireball.style.background = FIREBALL_COLORS[getRandomValue(FIREBALL_COLORS)];
 });
