@@ -27,10 +27,12 @@ function onPopupEscPress(evt) {
     closePopup();
   }
 }
+
 function openPopup() {
   setup.classList.remove('hidden');
   document.addEventListener('keydown', onPopupEscPress);
 }
+
 function closePopup() {
   setup.classList.add('hidden');
   document.removeEventListener('keydown', onPopupEscPress);
